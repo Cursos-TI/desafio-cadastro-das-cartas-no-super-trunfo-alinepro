@@ -4,41 +4,43 @@
 // Tema 1 - Cadastro das Cartas
 // Este código inicial serve como base para o desenvolvimento do sistema de cadastro de cartas de cidades.
 // Siga os comentários para implementar cada parte do desafio.
-//Teste larissa
+//Teste Aline
 
 int main() {
- int código da cidade, numero de pontos turisticos;
+ int codigodacidade, numerodepontosturisticos;
     char estado [50];
-    char nome da cidade[50];
-    float população,area, pib;
+    char nomedacidade[100];
+    float populacao;
+    float area;
+    float pib;
 
-    prinf("Digite o estado:\n");
+    printf("Digite o estado:\n");
     scanf("%s",&estado);
 
     printf("Digite o código:\n");
-    scanf("%d", &codigo);
+    scanf("%d", &codigodacidade);
 
     printf("Digite o nome da Cidade:\n");
-    scanf("%s", &nome da cidade);
+    scanf("%s", &nomedacidade);
 
     printf("Digite a população:\n");
     scanf("%f", &populacao);
 
     printf("Digite a área:\n");
-    scanf("%f", &area");
+    scanf("%f", &area);
 
     printf("Digite o PIB:\n");
     scanf("%f", &pib);
 
     printf("Digite o numero de pontos turisticos:\n");
-    scanf("%d", &numero de pontos turisticos);
+    scanf("%d", &numerodepontosturisticos);
 
-    printf("Estado:%s - Código:%d", estado, codigo);
-    printf("Nome da Cidade:%s", nome da cidade);
-    printf("População:%f", populacao);
-    printf("Área:%f", area);
-    printf("PIB:%f", pib);
-    printf("Número de pontos turísticos:%d", numero de pontos turisticos);
+    printf("Estado:%s - Código:%d\n", estado, codigodacidade);
+    printf("Nome da Cidade:%s\n", nomedacidade);
+    printf("População:%f\n", populacao);
+    printf("Área:%f\n", area);
+    printf("PIB:%f\n", pib);
+    printf("Número de pontos turísticos:%d\n", numerodepontosturisticos);
     
 
     

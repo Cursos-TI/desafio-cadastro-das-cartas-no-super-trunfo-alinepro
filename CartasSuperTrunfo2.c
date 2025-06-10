@@ -13,13 +13,17 @@ int main() {
     float populacao1;
     float area1;
     float pib1;
-
+    float densidadepopulacionall;
+    float pibpercapta1;
+ 
  int codigodacidade2, numerodepontosturisticos2;
     char estado2 [50];
     char nomedacidade2 [100];
     float populacao2;
     float area2;
     float pib2;
+    float densidadepopulacional2;
+    float pibpercapta2;
  
     printf("CARTA 1\n");
     printf("Digite o estado:\n");

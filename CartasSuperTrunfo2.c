@@ -27,13 +27,13 @@ int main() {
  
     printf("CARTA 1\n");
     printf("Digite o estado:\n");
-    scanf("%s", &estado1);
+    scanf("%s", estado1);
 
     printf("Digite o código:\n");
     scanf("%d", &codigodacidade1);
 
     printf("Digite o nome da Cidade:\n");
-    scanf("%s", &nomedacidade1);
+    scanf("%s", nomedacidade1);
 
     printf("Digite a população:\n");
     scanf("%f", &populacao1);
@@ -65,13 +65,13 @@ int main() {
 
     printf("CARTA 2\n");
     printf("Digite o estado:\n");
-    scanf("%s",&estado2);
+    scanf("%s", estado2);
 
     printf("Digite o código:\n");
     scanf("%d", &codigodacidade2);
 
     printf("Digite o nome da Cidade:\n");
-    scanf("%s", &nomedacidade2);
+    scanf("%s", nomedacidade2);
 
     printf("Digite a população:\n");
     scanf("%f", &populacao2);

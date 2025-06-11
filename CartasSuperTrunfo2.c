@@ -13,7 +13,7 @@ int main() {
     float populacao1;
     float area1;
     float pib1;
-    float densidadepopulacionall;
+    float densidadepopulacional1;
     float pibpercapta1;
  
  int codigodacidade2, numerodepontosturisticos2;

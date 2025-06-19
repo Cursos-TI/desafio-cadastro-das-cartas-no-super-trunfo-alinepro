@@ -111,13 +111,13 @@ int main() {
     printf("Super Poder da carta 2 é: %f\n", superPoder2);
     
     //comparação de cartas.
-     printf("População 1 > População 2:%f\n", populacao1>populacao2);
-     printf("Área 1 > Área 2:%f\n", area1>area2);
-     printf("PIB 1 > PIB 2:%f\n", pib1>pib2);
-     printf("Número de pontos turísticos 1 > Número de Pontos turísticos 2:%f\n", numerodepontosturisticos1>numerodepontosturisticos2);
-     printf("Densidade Populacional 1 < Densidade Populacional 2:%f\n", densidadepopulacional1<densiddepopulacional2);
-     printf("Pib per capta 1 > Pib per capta 2:%f\n", pibpercapta1>pibpercapta2);
-     printf("Super poder 1 > Super poder 2:%f\n", superPoder1>superPoder2);
+     printf("População: Carta 1 venceu %f\n", populacao1>populacao2);
+     printf("Área: Carta 1 venceu%f\n", area1>area2);
+     printf("PIB: Carta 1 venceu%f\n", pib1>pib2);
+     printf("Número de pontos turísticos: Carta 1 venceu%f\n", numerodepontosturisticos1>numerodepontosturisticos2);
+     printf("Densidade Populacional: Carta 2 venceu %f\n", densidadepopulacional1<densiddepopulacional2);
+     printf("Pib per capta: Carta 1 venceu %f\n", pibpercapta1>pibpercapta2);
+     printf("Super poder: Carta 1 venceu %f\n", superPoder1>superPoder2);
  
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.

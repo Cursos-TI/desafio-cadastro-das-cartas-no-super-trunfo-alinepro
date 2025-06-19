@@ -104,10 +104,10 @@ int main() {
 
     //Soma dos atributos população, área, pib, número de pontos turísticos, pib per capita e o inverso da densidade populacional.
 
-    float superPoder1 = populacao1 + area1 + pib1 + numerodepontosturisticos1 + pibpercapta1 + (densidadepopulacional1 * area1);
+    float superPoder1 = populacao1 + area1 + pib1 + numerodepontosturisticos1 + pibpercapta1 + (area1 / populacao1);
     printf("Super Poder da carta 1 é: %.2f\n", superPoder1);
 
-    float superPoder2 = populacao2 + area2 + pib2 + numerodepontosturisticos2 + pibpercapta2 + (densidadepopulacional2 * area2);
+    float superPoder2 = populacao2 + area2 + pib2 + numerodepontosturisticos2 + pibpercapta2 + (area2 / populacao2);
     printf("Super Poder da carta 2 é: %.2f\n", superPoder2);
 
     //comparação de cartas.

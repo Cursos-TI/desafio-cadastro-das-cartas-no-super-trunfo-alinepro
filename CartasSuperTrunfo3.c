@@ -7,24 +7,27 @@
 //Teste Aline
 
 int main() {
- int codigodacidade1, numerodepontosturisticos1;
+ int codigodacidade1, numerodepontosturisticos1, carta1;
     char estado1 [50];
     char nomedacidade1 [100];
     float populacao1;
     float area1;
     float pib1;
+ 
     float densidadepopulacional1;
     float pibpercapta1;
- 
- int codigodacidade2, numerodepontosturisticos2;
+    
+ int codigodacidade2, numerodepontosturisticos2, carta2;
     char estado2 [50];
     char nomedacidade2 [100];
     float populacao2;
     float area2;
     float pib2;
+ 
     float densidadepopulacional2;
     float pibpercapta2;
- 
+
+  
     printf("CARTA 1\n");
     printf("Digite o estado:\n");
     scanf("%s", estado1);
@@ -59,12 +62,10 @@ int main() {
     printf("Área:%.2f km2\n", area1);
     printf("PIB:%.2f bilhões de reais\n", pib1);
     printf("Número de pontos turísticos:%d\n", numerodepontosturisticos1);
-
-    
-
     printf("Densidade pupolacional:%.2f\n", densidadepopulacional1);
     printf("PIB per capta:%.2f\n",pibpercapta1);
-
+ 
+     
     printf("CARTA 2\n");
     printf("Digite o estado:\n");
     scanf("%s", estado2);
@@ -100,7 +101,16 @@ int main() {
     printf("Número de pontos turísticos:%d\n", numerodepontosturisticos2);
     printf("Densidade pupolacional:%.2f\n", densidadepopulacional2);
     printf("PIB per capta:%.2f\n",pibpercapta2);
-        
+    
+    //Soma dos atributos população, área, pib, número de pontos turísticos, pib per capta e o inverso da densidade populacional.
+    
+    float superPoder1 = população1 + area1 + pib1 + numerodepontosturisticos1 + pibpercapta1 + (densidadepopulacional*area1);
+    printf("Super Poder da carta 1 é: %f\n", superPoder1);
+
+    float superPoder2 = população2 + area2 + pib2 + numerodepontosturisticos2 + pibpercapta2 + (densidadepopulacional2*area2);
+    printf("Super Poder da carta 2 é: %f\n", superPoder2);
+    //comparação de cartas.
+      
     
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.

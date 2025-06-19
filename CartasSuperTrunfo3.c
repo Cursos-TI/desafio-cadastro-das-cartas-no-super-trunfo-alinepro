@@ -49,11 +49,11 @@ int main() {
 
     printf("Digite o numero de pontos turisticos:\n");
     scanf("%d", &numerodepontosturisticos1);
-
+    
+    //densidade populacional e pib per capta são calculados de acordo com divisão da população pela área e pelo pib respectivamente.
     densidadepopulacional1 = populacao1/area1;
     pibpercapta1 = pib1/popuçacao1;
-   //densidade populacional e pib per capta são calculados de acordo com divisão da população pela área e pelo pib respectivamente.
-    
+      
     printf("CARTA 1\n");
     printf("Estado:%s\n",estado1);
     printf("Código:%d\n", codigodacidade1);
@@ -104,14 +104,21 @@ int main() {
     
     //Soma dos atributos população, área, pib, número de pontos turísticos, pib per capta e o inverso da densidade populacional.
     
-    float superPoder1 = população1 + area1 + pib1 + numerodepontosturisticos1 + pibpercapta1 + (densidadepopulacional*area1);
+    float superPoder1 = populacao1 + area1 + pib1 + numerodepontosturisticos1 + pibpercapta1 + (densidadepopulacional*area1);
     printf("Super Poder da carta 1 é: %f\n", superPoder1);
 
-    float superPoder2 = população2 + area2 + pib2 + numerodepontosturisticos2 + pibpercapta2 + (densidadepopulacional2*area2);
+    float superPoder2 = populacao2 + area2 + pib2 + numerodepontosturisticos2 + pibpercapta2 + (densidadepopulacional2*area2);
     printf("Super Poder da carta 2 é: %f\n", superPoder2);
-    //comparação de cartas.
-      
     
+    //comparação de cartas.
+     printf("População 1 > População 2:%f\n", populacao1>populacao2);
+     printf("Área 1 > Área 2:%f\n", area1>area2);
+     printf("PIB 1 > PIB 2:%f\n", pib1>pib2);
+     printf("Número de pontos turísticos 1 > Número de Pontos turísticos 2:%f\n", numerodepontosturisticos1>numerodepontosturisticos2);
+     printf("Densidade Populacional 1 < Densidade Populacional 2:%f\n", densidadepopulacional1<densiddepopulacional2);
+     printf("Pib per capta 1 > Pib per capta 2:%f\n", pibpercapta1>pibpercapta2);
+     printf("Super poder 1 > Super poder 2:%f\n", superPoder1>superPoder2);
+ 
     // Sugestão: Defina variáveis separadas para cada atributo da cidade.
     // Exemplos de atributos: código da cidade, nome, população, área, PIB, número de pontos turísticos.
     

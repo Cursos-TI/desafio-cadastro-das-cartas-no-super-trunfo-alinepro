@@ -119,5 +119,16 @@ int main() {
     printf("Pib per capita: Carta 1 venceu %d\n", pibpercapta1 > pibpercapta2);
     printf("Super poder: Carta 1 venceu %d\n", superPoder1 > superPoder2);
 
+    //comparação de atributos utilizando condição if-else
+    if (populacao1>populacao2){
+        printf("Carta 1 tem maior valor!\n");
+    } else{
+        printf("Carta 2 tem maior valor!\n");
+    }
+    if (densidadepopulacional1 < densidadepopulacional2){
+        printf("Carta 1 vence o jogo!\n");
+    } else{
+        printf("Carta 2 vence o jogo"\n");
+    }
     return 0;
 }

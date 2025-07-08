@@ -128,7 +128,7 @@ int main() {
     if (densidadepopulacional1 < densidadepopulacional2){
         printf("Carta 1 vence o jogo!\n");
     } else{
-        printf("Carta 2 vence o jogo"\n");
+        printf("Carta 2 vence o jogo!\n");
     }
     return 0;
 }

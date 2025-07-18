@@ -155,62 +155,69 @@ int main() {
 
     printf("Escolha o atributo para comparar (1 a 5):\n");
     scanf("%d", &carta1);
+    
     switch (carta1){
             case 1:
-                printf("População Carta 1- ");
+                printf("População Carta 1\n");
                 break;
             case 2:
-                printf("Área Carta 1- ");
+                printf("Área Carta 1\n");
                 break;
             case 3:
-                printf("PIB Carta 1- ");
+                printf("PIB Carta 1\n");
                 break;
             case 4:
-                printf("Número de pontos turísticos Carta 1- ");
+                printf("Número de pontos turísticos Carta 1\n");
                 break;
             case 5:
-                printf("Densidade Populacional Carta 1- ");
+                printf("Densidade Populacional Carta 1\n");
                 break;
-        default
-        printf("Opção Inválida");
+        default:
+        printf("Opção Inválida\n");
         }
     
-    printf("Escolha o atributo para comparar (1 a 5):\n");
-    scanf("%d", &carta2);
-    switch (carta2){
+        printf("Escolha o atributo para comparar (1 a 5):\n");
+        scanf("%d", &carta2);
+        switch (carta2){
             case 1:
-                printf("População Carta 2");
+                printf("População Carta 2\n");
                 break;
             case 2:
-                printf("Área Carta 2");
+                printf("Área Carta 2\n");
                 break;
             case 3:
-                printf("PIB Carta 2");
+                printf("PIB Carta 2\n");
                 break;
             case 4:
-                printf("Número de pontos turísticos Carta 2");
+                printf("Número de pontos turísticos Carta 2\n");
                 break;
             case 5:
-                printf("Densidade Populacional Carta 2");
+                printf("Densidade Populacional Carta 2\n");
                 break;
-        default
-        printf("Opção Inválida");
+        default:
+        printf("Opção Inválida\n");
         }
     
 //Qual carta venceu.
 //Em caso de empate, exibir a mensagem "Empate!".
 
-    if ((populacao1 == populacao2) && (area1 == area2) && (pib1 == pib2) && (numerodepontosturisticos1 == numerodepontosturisticos2)){
-        printf("### Empate ###\n");
+    if (populacao1 == populacao2) {
+        printf("### Empate de populações ###\n");
+    } else if (area1 == area2){
+        printf("### Empate de Área ###\n");
+    } else if (pib1 == pib2){
+        printf("### Empate de PIB ###\n");
+    } else if (numerodepontosturisticos1 == numerodepontosturisticos2){
+        printf("### Empate de Número de pontos turísticos ###\n");
     } else if ((populacao1 > populacao2) && (area1 > area2) && (pib1 > pib2) && (numerodepontosturisticos1 > numerodepontosturisticos2)){
         printf("### Carta 1 vence! ###\n");
     } else{
         printf("### Carta 2 vence! ###\n");
     } 
     if (densidadepopulacional1 < densidadepopulacional2){
-        printf("### Carta 1 vence! ###\n");
+        printf("### A Densidade Populacional da Carta 1 vence! ###\n");
     } else{
-        printf("### Carta 2 vence! ###\n");
-
+        printf("### A Densidade Populacional da Carta 2 vence! ###\n");
+    }
 return 0;
 }

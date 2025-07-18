@@ -17,8 +17,7 @@ int main() {
     float populacao1;
     float area1;
     float pib1;
-    srand(time(0));
-
+    
     float densidadepopulacional1;
     float pibpercapta1;
 
@@ -32,8 +31,11 @@ int main() {
     float densidadepopulacional2;
     float pibpercapta2;
 
-// Os valores do atributo para cada carta.
+    srand(time(0));
 
+    // Os valores do atributo para cada carta.
+
+    // CARTA 1
     printf("CARTA 1\n");
     //printf("Digite o estado:\n");
     //scanf("%s", estado1);
@@ -57,8 +59,9 @@ int main() {
     scanf("%d", &numerodepontosturisticos1);
 
     //densidade populacional e pib per capta são calculados de acordo com divisão da população pela área e pelo pib respectivamente.
+    
     densidadepopulacional1 = populacao1 / area1;
-    //pibpercapta1 = pib1 / populacao1;
+    pibpercapta1 = pib1 / populacao1;
 
     // O nome dos dois países.
 
@@ -66,20 +69,20 @@ int main() {
     //printf("Estado: %s\n", estado1);
     //printf("Código: %d\n", codigodacidade1);
     printf("Nome da Cidade: %s\n", nomedacidade1);
-    printf("População: %f\n", populacao1);
-    printf("Área: %f km2\n", area1);
-    printf("PIB: %f bilhões de reais\n", pib1);
+    printf("População: %2f\n", populacao1);
+    printf("Área: %2f km2\n", area1);
+    printf("PIB: %2f bilhões de reais\n", pib1);
     printf("Número de pontos turísticos: %d\n", numerodepontosturisticos1);
-    printf("Densidade populacional: %f\n", densidadepopulacional1);
-    //printf("PIB per capita: %f\n", pibpercapta1);
+    printf("Densidade populacional: %2f\n", densidadepopulacional1);
+    printf("PIB per capita: %2f\n", pibpercapta1);
 
 
     printf("CARTA 2\n");
     //printf("Digite o estado:\n");
     //scanf("%s", estado2);
 
-   // printf("Digite o código:\n");
-  //scanf("%d", &codigodacidade2);
+    // printf("Digite o código:\n");
+    //scanf("%d", &codigodacidade2);
 
     printf("Digite o nome da Cidade:\n");
     scanf("%s", nomedacidade2);
@@ -97,19 +100,20 @@ int main() {
     scanf("%d", &numerodepontosturisticos2);
 
     densidadepopulacional2 = populacao2 / area2;
-   // pibpercapta2 = pib2 / populacao2;
+    pibpercapta2 = pib2 / populacao2;
 
     printf("CARTA 2\n");
     //printf("Estado: %s\n", estado2);
     //printf("Código: %d\n", codigodacidade2);
     printf("Nome da Cidade: %s\n", nomedacidade2);
-    printf("População: %f\n", populacao2);
-    printf("Área: %f km2\n", area2);
-    printf("PIB: %f bilhões de reais\n", pib2);
+    printf("População: %2f\n", populacao2);
+    printf("Área: %2f km2\n", area2);
+    printf("PIB: %2f bilhões de reais\n", pib2);
     printf("Número de pontos turísticos: %d\n", numerodepontosturisticos2);
-    printf("Densidade populacional: %f\n", densidadepopulacional2);
-    //printf("PIB per capita: %f\n", pibpercapta2);
+    printf("Densidade populacional: %2f\n", densidadepopulacional2);
+    printf("PIB per capita: %2f\n", pibpercapta2);
 
+    //SUPERPODER
     //Soma dos atributos população, área, pib, número de pontos turísticos, pib per capita e o inverso da densidade populacional.
 
     float superPoder1 = populacao1 + area1 + pib1 + numerodepontosturisticos1 + pibpercapta1 + (area1 / populacao1);

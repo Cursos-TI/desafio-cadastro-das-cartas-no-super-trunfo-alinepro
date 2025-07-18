@@ -153,8 +153,9 @@ int main() {
     printf("4. Número de pontos turísticos\n");
     printf("5. Densidade Populacional\n");
 
-    switch (carta1)
-        {
+    printf("Escolha o atributo para comparar (1 a 5):\n");
+    scanf("%d", &carta1);
+    switch (carta1){
             case 1:
                 printf("População Carta 1- ");
                 break;
@@ -170,12 +171,13 @@ int main() {
             case 5:
                 printf("Densidade Populacional Carta 1- ");
                 break;
-        }
-    default
+        default
         printf("Opção Inválida");
-
-    switch (carta2)
-        {
+        }
+    
+    printf("Escolha o atributo para comparar (1 a 5):\n");
+    scanf("%d", &carta2);
+    switch (carta2){
             case 1:
                 printf("População Carta 2");
                 break;
@@ -191,10 +193,10 @@ int main() {
             case 5:
                 printf("Densidade Populacional Carta 2");
                 break;
-        }
-    default
+        default
         printf("Opção Inválida");
-
+        }
+    
 //Qual carta venceu.
 //Em caso de empate, exibir a mensagem "Empate!".
 
